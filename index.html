@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitesh Sharma - Profile Card</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #0f172a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-card {
+            background: linear-gradient(135deg, #1e3a8a, #06b6d4);
+            border-radius: 20px;
+            padding: 30px;
+            width: 320px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            transition: 0.4s;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-12px) scale(1.02);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .job-title {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .bio {
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.3);
+            color: #facc15;
+        }
+
+        .connect-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background: white;
+            color: #1e3a8a;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .connect-button:hover {
+            background: #facc15;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+        <img src="https://i.pravatar.cc/150?img=3" alt="Profile" class="profile-img">
+
+        <div class="name">Nitesh Sharma</div>
+        <div class="job-title">BCA Student | Aspiring Full Stack Developer</div>
+
+        <div class="bio">
+            Building skills in full stack development & UI/UX. Focused on creating impactful digital products.
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nitesh-sharma-2abb1a326" target="_blank">
+                <i class="fab fa-linkedin"></i>   
+        </div>
+
+        <button class="connect-button" onclick="connect()">Connect</button>
+    </div>
+
+    <script>
+        function connect() {
+            alert("Let's connect, Nitesh 🚀");
+        }
+    </script>
+
+</body>
+</html>
